@@ -339,6 +339,7 @@ else
 endif
 ifneq ($(TW_CUSTOM_VERSION_STR),)
     LOCAL_CFLAGS += -DTW_CUSTOM_VERSION_STR=\"$(TW_CUSTOM_VERSION_STR)\"
+endif
 
 LOCAL_ADDITIONAL_DEPENDENCIES := \
     dump_image \
