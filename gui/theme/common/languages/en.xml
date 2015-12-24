@@ -9,7 +9,7 @@
 		<resource name="font_m" type="fontoverride" filename="RobotoCondensed-Regular.ttf" scale="100" />
 		<resource name="font_s" type="fontoverride" filename="RobotoCondensed-Regular.ttf" scale="100" />
 		<resource name="fixed" type="fontoverride" filename="DroidSansMono.ttf" scale="100" />
-		
+
 		<!-- Partition display names -->
 		<string name="system">System</string>
 		<string name="system_image">System Image</string>
@@ -648,9 +648,11 @@
 		<string name="config_twrp">Configuring TWRP...</string>
 		<string name="config_twrp_err">Unable to configure TWRP with this kernel.</string>
 		<string name="copy_log">Copied recovery log to {1}.</string>
+		<string name="copy_klog">Copied kernel log to {1}.</string>
 		<string name="max_queue">Maximum zip queue reached!</string>
 		<string name="min_queue">Minimum zip queue reached!</string>
-		<string name="screenshot_err">Failed to take a screenshot!</string>
+        <string name="screenshot_saved">Screenshot was saved to {1}</string>
+        <string name="screenshot_err">Failed to take a screenshot!</string>
 		<string name="zip_wipe_cache">One or more zip requested a cache wipe -- Wiping cache now.</string>
 		<string name="and_sec_wipe_err">Unable to wipe android secure</string>
 		<string name="dalvik_wipe_err">Failed to wipe dalvik</string>
