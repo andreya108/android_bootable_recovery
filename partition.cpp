@@ -1922,6 +1922,9 @@ bool TWPartition::Wipe_Data_Without_Wiping_Media() {
 			// the media folder for multi-user.
 			//TODO: convert this to use twrpDU.cpp
 			if (strcmp(de->d_name, "media") == 0 || strcmp(de->d_name, ".layout_version") == 0)   continue;
+#ifdef TW_NVRAM_LINKED_TO_DATA
+            if (strcmp(de->d_name, "nvram") == 0) continue;
+#endif
 
 			dir = "/data/";
 			dir.append(de->d_name);
