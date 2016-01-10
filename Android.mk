@@ -518,6 +518,9 @@ LOCAL_STATIC_LIBRARIES := \
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
+ifneq ($(TW_NO_LEGACY_PROPS),)
+    LOCAL_CFLAGS += -DTW_NO_LEGACY_PROPS
+endif
 
 LOCAL_MODULE := libaosprecovery
 LOCAL_MODULE_TAGS := eng optional

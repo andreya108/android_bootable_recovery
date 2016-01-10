@@ -25,7 +25,11 @@
 #include <limits.h>
 #include <errno.h>
 
+#ifndef TW_NO_LEGACY_PROPS
 #include "../../bionic/libc/private/bionic_futex.h"
+#else
+#define __futex_wake(a,b) {}
+#endif
 
 #include <cutils/properties.h>
 

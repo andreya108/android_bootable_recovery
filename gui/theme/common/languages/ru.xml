@@ -20,9 +20,9 @@
         <string name="recovery">Recovery</string>
         <string name="cache">Cache</string>
         <string name="data">Data</string>
-        <string name="sdcard">SD-Карта</string>
+        <string name="sdcard">Внутр. память</string>
         <string name="internal">Внутр. память</string>
-        <string name="microsd">MicroSD карта</string>
+        <string name="microsd">MicroSD</string>
         <string name="usbotg">USB OTG</string>
         <string name="android_secure">Раздел Android Secure</string>
         <string name="dalvik">Dalvik/ART Cache</string>
@@ -63,8 +63,8 @@
         <string name="select_type_hdr">Выбрать тип</string>
         <string name="install_zip_hdr">Установить zip</string>
         <string name="install_zip_btn">Установить zip</string>
-        <string name="install_image_hdr">Установить img</string>
-        <string name="install_image_btn">Установить img</string>
+        <string name="install_image_hdr">Установить .IMG</string>
+        <string name="install_image_btn">Установить .IMG</string>
         <string name="install_select_file_hdr">Выбрать файл</string>
         <string name="file_selector_folders_hdr">Папки</string>
         <string name="select_file_from_storage">Выбрать файл(ы) из %tw_storage_display_name% (%tw_storage_free_size% Мб)</string>
@@ -204,10 +204,10 @@
         <string name="enc_disabled">неактивно - установите пароль для активации</string>
         <string name="enc_enabled">активно</string>
         <string name="enable_backup_comp_chk">Включить сжатие</string>
-        <string name="skip_md5_backup_chk">Пропустить создание MD5 во время резервн.копир-я</string>
+        <string name="skip_md5_backup_chk">Пропустить создание MD5 во время бэкапа</string>
         <string name="disable_backup_space_chk">Отключить проверку свободного пространства</string>
         <string name="refresh_sizes_btn">Обновить размеры</string>
-        <string name="swipe_backup">Начать резервир-е</string>
+        <string name="swipe_backup">Начать бэкап!</string>
         <string name="append_date_btn">Добавить дату</string>
         <string name="backup_name_exists">Резервная копия с таким именем уже существует!</string>
         <string name="encrypt_backup">Подтвердить шифрование резервной копии?</string>
@@ -485,8 +485,8 @@
         <string name="md5_error"> * MD5 ошибка!</string>
         <string name="md5_compute_error"> * Ошибка вычисления MD5.</string>
         <string name="md5_created"> * MD5 Создан.</string>
-        <string name="current_date">(Текущая дата)</string>
-        <string name="auto_generate">(Автогенерация)</string>
+        <string name="current_date">(Current Date)</string>
+        <string name="auto_generate">(Auto Generate)</string>
         <string name="unable_to_locate_partition">Недоступное расположение раздела '{1}' для вычисления резервной копии.</string>
         <string name="no_partition_selected">Не выбран раздел для резервирования.</string>
         <string name="total_partitions_backup"> * Всего разделов для резервирования: {1}</string>
@@ -655,8 +655,8 @@
         <string name="zip_wipe_cache">Один или более zip требует очистки Cache -- Очистка Cache будет начата.</string>
         <string name="and_sec_wipe_err">Не удалось очистить android secure</string>
         <string name="dalvik_wipe_err">Не удалось очистить dalvik</string>
-        <string name="auto_gen">(Автогенерация)</string>
-        <string name="curr_date">(Текущее время)</string>
+        <string name="auto_gen">(Auto Generate)</string>
+        <string name="curr_date">(Current Date)</string>
         <string name="backup_name_len">Имя рез.копии слишком длинное.</string>
         <string name="backup_name_invalid">Имя рез.копии '{1}' содержит неприемлемые символы: '{1}'</string>
         <string name="backup_name_exists">Резервная копия с таким именем уже существует.</string>
