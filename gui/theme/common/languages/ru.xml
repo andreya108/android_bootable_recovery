@@ -239,6 +239,7 @@
         <string name="restore_backup_date">Рез.копия создана %tw_restore_file_date%</string>
         <string name="restore_sel_part">Выбрать место для восстановления:</string>
         <string name="retore_enable_md5_chk">Активировать проверку MD5 в рез.копии</string>
+	<string name="restore_completed">Восстановление завершено</string>
         <string name="swipe_restore">Начать восстан-е</string>
         <string name="swipe_restore_s">   Восстановление</string>
         <string name="rename_backup_hdr">Переименовать рез.копию</string>
@@ -307,6 +308,8 @@
         <string name="settings_language_btn">Язык</string>
         <string name="time_zone_hdr">Часовой пояс</string>
         <string name="sel_tz_list">Выбрать часовой пояс:</string>
+		<!-- Translator note: if it does not make sense to translate the locations or if it makes more sense,
+				feel free to change the location listed or drop the location entirely and just call it UTC -6 -->
         <string name="utcm11">(UTC -11) Самоа, Острова Мидуэй</string>
         <string name="utcm10">(UTC -10) Гавайи</string>
         <string name="utcm9">(UTC -9) Аляска</string>
@@ -434,6 +437,7 @@
         <string name="decrypt_data_hdr">Расшифровать данные</string>
         <string name="decrypt_data_enter_pass">Введите пароль для расшифровки</string>
         <string name="decryt_data_failed">Пароль неверен, повторите!</string>
+	<string name="decryt_data_failed_pattern">Шаблон неверен, повторите!</string>
         <string name="decrypt_data_enter_pattern">Ввести шаблон.</string>
         <string name="decrypt_data_trying">Попытка расшифровки</string>
         <string name="term_hdr">Терминальные команды</string>
@@ -556,6 +560,7 @@
         <string name="flash_done">[ПРОШИВКА ОБРАЗА ЗАВЕРШЕНА]</string>
         <string name="wiping">Очистка {1}</string>
         <string name="repair_not_exist">{1} не существует! Невозможно восстановить!</string>
+	<string name="repairing_using">Восстановление {1} используя {2}...</string>
         <string name="unable_repair">Не удалось восстановить {1}.</string>
         <string name="mount_data_footer">Не удается смонтировать /data и не удается найти crypto footer.</string>
         <!-- {1} is the folder name that we could not create, {2} is strerror output -->
@@ -572,7 +577,7 @@
         <string name="restoring">Восстановление</string>
         <string name="format_data_msg">Возможно, придется перезагрузить рекавери, чтоб использовать /data снова.</string>
         <string name="format_data_err">Невозможно отформатировать, чтобы удалить шифрование.</string>
-        <string name="formating_using">Форматирование {1} использовано {2}...</string>
+        <string name="formatting_using">Форматирование {1} использовано {2}...</string>
         <string name="unable_to_wipe">Не удалось очистить {1}.</string>
         <string name="remove_all">Удаление всех файлов из '{1}'</string>
         <string name="wiping_data">Очистка данных без очистки /data/media ...</string>

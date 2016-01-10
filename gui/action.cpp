@@ -226,6 +226,7 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(resize);
 		ADD_ACTION(changefilesystem);
 		ADD_ACTION(flashimage);
+		ADD_ACTION(twcmd);
 	}
 
 	// First, get the action
@@ -291,12 +292,9 @@ int GUIAction::NotifyTouch(TOUCH_STATE state __unused, int x __unused, int y __u
 
 int GUIAction::NotifyKey(int key, bool down)
 {
-	if (mKeys.empty())
-		return 0;
-
 	std::map<int, bool>::iterator itr = mKeys.find(key);
 	if(itr == mKeys.end())
-		return 0;
+		return 1;
 
 	bool prevState = itr->second;
 	itr->second = down;
@@ -311,7 +309,7 @@ int GUIAction::NotifyKey(int key, bool down)
 	} else if(down) {
 		for(itr = mKeys.begin(); itr != mKeys.end(); ++itr) {
 			if(!itr->second)
-				return 0;
+				return 1;
 		}
 
 		// Passed, all req buttons are pressed, reset them and consume release events
@@ -522,7 +520,6 @@ int GUIAction::reboot(std::string arg)
 
 int GUIAction::home(std::string arg __unused)
 {
-	PageManager::SelectPackage("TWRP");
 	gui_changePage("main");
 	return 0;
 }
@@ -1545,41 +1542,12 @@ int GUIAction::adbsideloadcancel(std::string arg __unused)
 
 int GUIAction::openrecoveryscript(std::string arg __unused)
 {
-	int op_status = 1;
-
 	operation_start("OpenRecoveryScript");
 	if (simulate) {
 		simulate_progress_bar();
 		operation_end(0);
 	} else {
-		// Check for the SCRIPT_FILE_TMP first as these are AOSP recovery commands
-		// that we converted to ORS commands during boot in recovery.cpp.
-		// Run those first.
-		int reboot = 0;
-		if (TWFunc::Path_Exists(SCRIPT_FILE_TMP)) {
-			gui_msg("running_recovery_commands=Running Recovery Commands");
-			if (OpenRecoveryScript::run_script_file() == 0) {
-				reboot = 1;
-				op_status = 0;
-			}
-		}
-		// Check for the ORS file in /cache and attempt to run those commands.
-		if (OpenRecoveryScript::check_for_script_file()) {
-			gui_msg("running_ors=Running OpenRecoveryScript");
-			if (OpenRecoveryScript::run_script_file() == 0) {
-				reboot = 1;
-				op_status = 0;
-			}
-		}
-		if (reboot) {
-			// Disable stock recovery reflashing
-			TWFunc::Disable_Stock_Recovery_Replace();
-			usleep(2000000); // Sleep for 2 seconds before rebooting
-			TWFunc::tw_reboot(rb_system);
-			usleep(5000000); // Sleep for 5 seconds to allow reboot to occur
-		} else {
-			DataManager::SetValue("tw_page_done", 1);
-		}
+		int op_status = OpenRecoveryScript::Run_OpenRecoveryScript_Action();
 		operation_end(op_status);
 	}
 	return 0;
@@ -1752,9 +1720,20 @@ int GUIAction::flashimage(std::string arg __unused)
 	return 0;
 }
 
+int GUIAction::twcmd(std::string arg)
+{
+	operation_start("TWRP CLI Command");
+	if (simulate)
+		simulate_progress_bar();
+	else
+		OpenRecoveryScript::Run_CLI_Command(arg.c_str());
+	operation_end(0);
+	return 0;
+}
+
 int GUIAction::getKeyByName(std::string key)
 {
-	if (key == "home")			return KEY_HOME;
+	if (key == "home")		return KEY_HOMEPAGE;  // note: KEY_HOME is cursor movement (like KEY_END)
 	else if (key == "menu")		return KEY_MENU;
 	else if (key == "back")	 	return KEY_BACK;
 	else if (key == "search")	return KEY_SEARCH;
