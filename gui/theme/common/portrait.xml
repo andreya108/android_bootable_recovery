@@ -4128,7 +4128,7 @@
 
 			<text style="text_l">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{term_hdr=Terminal Command}</text>
+				<text>{@term_hdr=Terminal Command}</text>
 			</text>
 
 			<text style="text_m">
