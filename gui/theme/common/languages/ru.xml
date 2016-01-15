@@ -368,6 +368,7 @@
         <string name="fix_perm_btn">Восст. разреш-я</string>
         <string name="fix_perm_s_btn">Восстановить разрешения</string>
         <string name="part_sd_btn">Разметка SD</string>
+        <string name="invalid_partsd_sel">Вы должны выбрать съемный накопитель.</string>
         <string name="part_sd_s_btn">SD-карта</string>
         <string name="file_manager_btn">Проводник</string>
         <string name="language_hdr">Язык</string>
