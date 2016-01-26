@@ -20,6 +20,12 @@ else
 	RELINK_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libcrypto.so
 	ifneq (,$(filter $(PLATFORM_SDK_VERSION), 23))
 	    RELINK_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/toybox
+	    ifneq ($(wildcard external/zip/Android.mk),)
+                RELINK_SOURCE_FILES += $(TARGET_OUT_OPTIONAL_EXECUTABLES)/zip
+	    endif
+	    ifneq ($(wildcard external/unzip/Android.mk),)
+                RELINK_SOURCE_FILES += $(TARGET_OUT_OPTIONAL_EXECUTABLES)/unzip
+	    endif
 	endif
 endif
 RELINK_SOURCE_FILES += $(TARGET_RECOVERY_ROOT_OUT)/sbin/pigz
@@ -149,6 +155,7 @@ ifeq ($(TW_INCLUDE_CRYPTO), true)
     RELINK_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libcryptfslollipop.so
     RELINK_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libcrypto.so
     RELINK_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libhardware.so
+    RELINK_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libgpt_twrp.so
     ifeq ($(TARGET_HW_DISK_ENCRYPTION),true)
         RELINK_SOURCE_FILES += $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/libcryptfs_hw.so
     endif
@@ -374,7 +381,8 @@ ifneq ($(TW_EXCLUDE_SUPERSU), true)
 
 		#su binary
 		include $(CLEAR_VARS)
-		LOCAL_MODULE := su
+		LOCAL_MODULE := suarm
+		LOCAL_MODULE_STEM := su
 		LOCAL_MODULE_TAGS := eng
 		LOCAL_MODULE_CLASS := RECOVERY_EXECUTABLES
 		LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/supersu
