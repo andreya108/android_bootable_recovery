@@ -163,6 +163,12 @@ static GRSurface* fbdev_init(minui_backend* backend) {
     vi.bits_per_pixel = 16;
 #endif
 
+#ifdef RECOVERY_FORCE_BGRA_8888
+    printf("Forcing pixel format: BGRA_8888\n");
+    vi.blue.offset    = 0;
+    vi.red.offset     = 16;
+#endif
+
     gr_framebuffer[0].width = vi.xres;
     gr_framebuffer[0].height = vi.yres;
     gr_framebuffer[0].row_bytes = fi.line_length;

@@ -105,11 +105,7 @@ ifeq ($(subst ",,$(TARGET_RECOVERY_FORCE_PIXEL_FORMAT)),RGBX_8888)
   LOCAL_CFLAGS += -DRECOVERY_RGBX
 endif
 ifeq ($(subst ",,$(TARGET_RECOVERY_FORCE_PIXEL_FORMAT)),BGRA_8888)
-  $(warning ****************************************************************************)
-  $(warning * TARGET_RECOVERY_FORCE_PIXEL_FORMAT := BGRA_8888 not implemented yet      *)
-  $(warning ****************************************************************************)
-  $(error stopping)
-  LOCAL_CFLAGS += -DRECOVERY_BGRA
+  LOCAL_CFLAGS += -DRECOVERY_BGRA -DRECOVERY_FORCE_BGRA_8888
 endif
 ifeq ($(subst ",,$(TARGET_RECOVERY_FORCE_PIXEL_FORMAT)),RGB_565)
   LOCAL_CFLAGS += -DRECOVERY_FORCE_RGB_565
