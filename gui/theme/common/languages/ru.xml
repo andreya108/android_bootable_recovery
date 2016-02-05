@@ -88,7 +88,7 @@
 		<string name="zip_queue">Очередь:</string>
 		<string name="options">Опции:</string>
 		<string name="swipe_confirm">   Подтвердить</string>
-		<string name="zip_add_btn">Добавить еще Zip</string>
+                <string name="zip_add_btn">Добавить ещё zip</string>
 		<string name="zip_clear_btn">Очистить очередь Zip</string>
 		<string name="install_zip_count_hdr">Установка Zip %tw_zip_index% из %tw_zip_queue_count%</string>
 		<string name="installing_zip_xml">Установка Zip: %tw_file%</string>
@@ -455,6 +455,7 @@
 		<string name="sideload_complete">ADB Sideload завершен</string>
 		<string name="fix_contexts_hdr">Исправление контекста SELinux</string>
 		<string name="fix_contexts_note1">Примечание: исправление контекста SELinux требуется редко.</string>
+                <string name="fix_perms_selinux_chk">Также исправить SELinux контексты</string>
 		<string name="fix_contexts_note2">Исправление SELinux-контекста может привести</string>
 		<string name="fix_contexts_note3">к тому, что система не будет запускаться.</string>
 		<string name="swipe_to_fix_contexts">Свайп для исправлен. контекста</string>
@@ -651,6 +652,7 @@
 		<string name="config_twrp">Конфигурирование TWRP...</string>
 		<string name="config_twrp_err">Невозможно сконфигурировать TWRP с этим ядром.</string>
 		<string name="copy_log">recovery.log скопирован в {1}.</string>
+		<string name="copy_klog">Лог ядра скопирован в {1}</string>
 		<string name="max_queue">Максимум zip в очереди достигнут!</string>
 		<string name="min_queue">Минимум zip в очереди достигнут!</string>
 		<string name="screenshot_saved">Скриншот сохранен в {1}</string>
