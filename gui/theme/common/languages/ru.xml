@@ -6,9 +6,9 @@
 
 	<resources>
 		<!-- Font overrides - only change these if your language requires special characters -->
-		<resource name="font_l" type="fontoverride" filename="RobotoCondensed-Regular.ttf" scale="90" />
-		<resource name="font_m" type="fontoverride" filename="RobotoCondensed-Regular.ttf" scale="90" />
-		<resource name="font_s" type="fontoverride" filename="RobotoCondensed-Regular.ttf" scale="90" />
+		<resource name="font_l" type="fontoverride" filename="DroidSans-CustomRu.ttf" scale="90" />
+		<resource name="font_m" type="fontoverride" filename="DroidSans-CustomRu.ttf" scale="100" />
+		<resource name="font_s" type="fontoverride" filename="DroidSans-CustomRu.ttf" scale="100" />
 		<resource name="fixed" type="fontoverride" filename="DroidSansMono.ttf" scale="100" />
 
 		<!-- Partition display names -->
@@ -259,7 +259,7 @@
 		<string name="decrypt_data_btn">Расшифровать данные</string>
 		<string name="disable_mtp_btn">Выключить MTP</string>
 		<string name="enable_mtp_btn">Включить MTP</string>
-		<string name="mount_usb_storage_btn">Смонтировать как USB-накопит.</string>
+		<string name="mount_usb_storage_btn">USB-накопитель</string>
 		<string name="usb_storage_hdr">USB накопитель</string>
 		<string name="usb_stor_mnt1">USB накопитель смонтирован</string>
 		<string name="usb_stor_mnt2">Для безопасного отключения вашего устройства</string>
