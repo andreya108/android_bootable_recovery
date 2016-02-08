@@ -436,9 +436,9 @@
 		<string name="fm_perms">Права:</string>
 		<string name="fm_complete">Операция завершена</string>
 		<string name="decrypt_data_hdr">Расшифровать данные</string>
-		<string name="decrypt_data_enter_pass">Введите пароль.</string>
-		<string name="decryt_data_failed">Пароль неверный, попробуйте снова!</string>
-		<string name="decryt_data_failed_pattern">Шаблон неверный, попробуйте снова!</string>
+        <string name="decrypt_data_enter_pass">Введите пароль.</string>
+		<string name="decrypt_data_failed">Пароль неверный, попробуйте снова!</string>
+		<string name="decrypt_data_failed_pattern">Шаблон неверный, попробуйте снова!</string>
 		<string name="decrypt_data_enter_pattern">Введите шаблон.</string>
 		<string name="decrypt_data_trying">Попытка расшифровки</string>
 		<string name="term_hdr">Команда терминала</string>
