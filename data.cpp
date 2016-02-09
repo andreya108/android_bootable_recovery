@@ -126,7 +126,6 @@ void DataManager::get_device_id(void) {
 			if (model_id[i] == ' ')
 				model_id[i] = '_';
 		}
-
 		snprintf(device_id, DEVID_MAX, "%s", model_id);
 
 		if (strlen(device_id) < DEVID_MAX) {
