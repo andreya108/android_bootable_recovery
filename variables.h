@@ -20,7 +20,7 @@
 #ifdef TW_CUSTOM_VERSION_STR
 #define TW_VERSION_STR              TW_CUSTOM_VERSION_STR
 #else
-#define TW_VERSION_STR              "3.0.0-1"
+#define TW_VERSION_STR              "3.0.1-0"
 #endif
 #define TW_BUILT_STR                "andreya108@4pda/xda"
 
@@ -39,9 +39,6 @@
 #define TW_BACKUP_CACHE_VAR         "tw_backup_cache"
 #define TW_BACKUP_ANDSEC_VAR        "tw_backup_andsec"
 #define TW_BACKUP_SDEXT_VAR         "tw_backup_sdext"
-#define TW_BACKUP_SP1_VAR           "tw_backup_sp1"
-#define TW_BACKUP_SP2_VAR           "tw_backup_sp2"
-#define TW_BACKUP_SP3_VAR           "tw_backup_sp3"
 #define TW_BACKUP_AVG_IMG_RATE      "tw_backup_avg_img_rate"
 #define TW_BACKUP_AVG_FILE_RATE     "tw_backup_avg_file_rate"
 #define TW_BACKUP_AVG_FILE_COMP_RATE    "tw_backup_avg_file_comp_rate"
@@ -52,9 +49,6 @@
 #define TW_BACKUP_CACHE_SIZE        "tw_backup_cache_size"
 #define TW_BACKUP_ANDSEC_SIZE       "tw_backup_andsec_size"
 #define TW_BACKUP_SDEXT_SIZE        "tw_backup_sdext_size"
-#define TW_BACKUP_SP1_SIZE          "tw_backup_sp1_size"
-#define TW_BACKUP_SP2_SIZE          "tw_backup_sp2_size"
-#define TW_BACKUP_SP3_SIZE          "tw_backup_sp3_size"
 #define TW_STORAGE_FREE_SIZE        "tw_storage_free_size"
 #define TW_GENERATE_MD5_TEXT        "tw_generate_md5_text"
 
@@ -66,9 +60,6 @@
 #define TW_RESTORE_CACHE_VAR        "tw_restore_cache"
 #define TW_RESTORE_ANDSEC_VAR       "tw_restore_andsec"
 #define TW_RESTORE_SDEXT_VAR        "tw_restore_sdext"
-#define TW_RESTORE_SP1_VAR          "tw_restore_sp1"
-#define TW_RESTORE_SP2_VAR          "tw_restore_sp2"
-#define TW_RESTORE_SP3_VAR          "tw_restore_sp3"
 #define TW_RESTORE_AVG_IMG_RATE     "tw_restore_avg_img_rate"
 #define TW_RESTORE_AVG_FILE_RATE    "tw_restore_avg_file_rate"
 #define TW_RESTORE_AVG_FILE_COMP_RATE    "tw_restore_avg_file_comp_rate"
@@ -76,8 +67,6 @@
 #define TW_VERIFY_MD5_TEXT          "tw_verify_md5_text"
 #define TW_UPDATE_SYSTEM_DETAILS_TEXT "tw_update_system_details_text"
 
-#define TW_SHOW_SPAM_VAR            "tw_show_spam"
-#define TW_COLOR_THEME_VAR          "tw_color_theme"
 #define TW_VERSION_VAR              "tw_version"
 #define TW_BUILT_VAR				"tw_built"
 #define TW_PRODUCT_MODEL_VAR		"tw_product_model"
@@ -95,10 +84,6 @@
 #define TW_RM_RF_VAR                "tw_rm_rf"
 
 #define TW_BACKUPS_FOLDER_VAR       "tw_backups_folder"
-
-#define TW_SP1_PARTITION_NAME_VAR   "tw_sp1_name"
-#define TW_SP2_PARTITION_NAME_VAR   "tw_sp2_name"
-#define TW_SP3_PARTITION_NAME_VAR   "tw_sp3_name"
 
 #define TW_SDEXT_SIZE               "tw_sdext_size"
 #define TW_SWAP_SIZE                "tw_swap_size"
@@ -155,7 +140,6 @@
 #define TW_CRYPTO_PWTYPE            "tw_crypto_pwtype"
 #define TW_HAS_CRYPTO               "tw_has_crypto"
 #define TW_CRYPTO_PASSWORD          "tw_crypto_password"
-#define TW_DATA_BLK_DEVICE          "tw_data_blk_device"  // Original block device - not decrypted
 #define TW_SDEXT_DISABLE_EXT4       "tw_sdext_disable_ext4"
 #define TW_MILITARY_TIME            "tw_military_time"
 
