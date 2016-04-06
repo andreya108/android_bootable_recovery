@@ -20,7 +20,7 @@
 #ifdef TW_CUSTOM_VERSION_STR
 #define TW_VERSION_STR              TW_CUSTOM_VERSION_STR
 #else
-#define TW_VERSION_STR              "3.0.1-0"
+#define TW_VERSION_STR              "3.0.2-0"
 #endif
 #define TW_BUILT_STR                "andreya108@4pda/xda"
 
