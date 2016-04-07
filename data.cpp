@@ -757,7 +757,7 @@ void DataManager::SetDefaultValues()
 	mPersist.SetValue(TW_SIGNED_ZIP_VERIFY_VAR, "0");
 	mPersist.SetValue(TW_FORCE_MD5_CHECK_VAR, "0");
 	mPersist.SetValue(TW_USE_COMPRESSION_VAR, "0");
-	mPersist.SetValue(TW_TIME_ZONE_VAR, "SAUST-3SAUDT");
+	mPersist.SetValue(TW_TIME_ZONE_VAR, "SAUST-3");
 	mPersist.SetValue(TW_GUI_SORT_ORDER, "1");
 	mPersist.SetValue(TW_RM_RF_VAR, "0");
 	mPersist.SetValue(TW_SKIP_MD5_CHECK_VAR, "0");
@@ -767,7 +767,7 @@ void DataManager::SetDefaultValues()
 	mPersist.SetValue(TW_SDPART_FILE_SYSTEM, "ext3");
 	mPersist.SetValue(TW_TIME_ZONE_GUISEL, "CST6;CDT,M3.2.0,M11.1.0");
 	mPersist.SetValue(TW_TIME_ZONE_GUIOFFSET, "0");
-	mPersist.SetValue(TW_TIME_ZONE_GUIDST, "1");
+	mPersist.SetValue(TW_TIME_ZONE_GUIDST, "0");
 	mData.SetValue(TW_ACTION_BUSY, "0");
 	mData.SetValue("tw_wipe_cache", "0");
 	mData.SetValue("tw_wipe_dalvik", "0");
